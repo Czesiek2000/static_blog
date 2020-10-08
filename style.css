@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  overflow-x: hidden; }
+
 a {
   text-decoration: none;
   color: #000000; }
@@ -56,9 +59,15 @@ a {
   margin-bottom: 30px;
   margin-left: 50px; }
 
+@media screen and (min-width: 375px) {
+  .hero-text {
+    top: 9%;
+    left: 18%; } }
+
 @media screen and (min-width: 425px) {
   .hero-text {
-    top: 9px; }
+    top: 10%;
+    left: 22%; }
   .hero .description {
     margin-left: 0; }
   .posts {
@@ -73,6 +82,9 @@ a {
     font-size: 19px; } }
 
 @media screen and (min-width: 768px) {
+  .hero-text {
+    top: 20%;
+    left: 37%; }
   .posts {
     margin-left: auto;
     margin-right: auto;
@@ -84,7 +96,16 @@ a {
   .footer {
     text-align: center; } }
 
+@media screen and (min-width: 1024px) {
+  .hero-text {
+    top: 30%;
+    left: 40%; } }
+
 @media screen and (min-width: 1440px) {
+  .hero-text {
+    top: 34%;
+    left: 36%;
+    font-size: 35px; }
   .posts {
     width: 1200px; }
   .post .title {

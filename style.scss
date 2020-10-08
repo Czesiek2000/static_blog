@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: none;
     color: #000000;
@@ -81,10 +85,20 @@ a {
     margin-left: 50px;
 }
 
+@media screen and (min-width: 375px) {
+    .hero {
+        &-text {
+            top: 9%;
+            left: 18%;
+        }
+    }
+}
+
 @media screen and (min-width: 425px) {
     .hero {
         &-text {
-            top: 9px;
+            top: 10%;
+            left: 22%;
         }
 
         .description {
@@ -114,6 +128,12 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+    .hero {
+        &-text {
+            top: 20%;
+            left: 37%;
+        }
+    }
     .post {
         &s {
             margin-left: auto;
@@ -135,7 +155,25 @@ a {
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .hero {
+        &-text {
+            top: 25%;
+            left: 30%;
+            font-size: 30px;
+        }
+    }
+}
+
 @media screen and (min-width: 1440px) {
+    .hero {
+        &-text {
+            top: 34%;
+            left: 36%;
+            font-size: 35px;
+        }
+    }
+
     .post {
         &s {
             width: 1200px;
