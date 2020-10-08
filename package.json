@@ -1,0 +1,13 @@
+{
+  "name": "sample-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --include-path scss post.scss post.css",
+    "watch": "nodemon node-sass --include-path scss style.scss style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
