@@ -1,13 +1,17 @@
 {
   "name": "sample-blog",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sample blog made for scraping learning purpose",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass --include-path scss post.scss post.css",
-    "watch": "nodemon node-sass --include-path scss style.scss style.css"
+    "watch": "nodemon node-sass --include-path scss style.scss style.css",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
